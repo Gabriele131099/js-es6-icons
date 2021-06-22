@@ -97,4 +97,12 @@ const icons = [
 	}
 ];
 
-const {name, prefix, type, family} = icons
+
+const stampa = document.querySelector('.icons-container');
+icons.forEach(icon => {
+    const {name, prefix, family,type} = icon;
+
+        stampa.innerHTML += `
+        <div class="icon-card col"><i class="${family} ${prefix}${name}" ></i></div>
+        `    
+});
