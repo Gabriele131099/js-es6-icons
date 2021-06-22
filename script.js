@@ -103,6 +103,6 @@ icons.forEach(icon => {
     const {name, prefix, family,type} = icon;
 
         stampa.innerHTML += `
-        <div class="icon-card col"><i class="${family} ${prefix}${name}" ></i></div>
+        <div class="offset-1 icon-card col-2"><i class="${family} ${prefix}${name}" ></i></div>
         `    
 });
