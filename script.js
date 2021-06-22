@@ -103,6 +103,12 @@ icons.forEach(icon => {
     const {name, prefix, family,type} = icon;
 
         stampa.innerHTML += `
-        <div class="offset-1 icon-card col-2"><i class="${family} ${prefix}${name}" ></i></div>
+        <div class="icon-card ${type}">
+            <i class="${family} ${prefix}${name}" > 
+             <div class="icon-name">${name.toUpperCase()}</div>
+            </i>
+        </div>
         `    
 });
+
+

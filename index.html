@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>es6 icons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-    <div class="icons-container row"></div>
+    <nav>
+        <h1>FontIcons</h1>
+    </nav>
+    <nav class="nav-2">
+        <h3>Filtra per Tipo : </h3>
+        <select name="icon" id="icon">
+            <option value="all">All</option>
+            <option value="animal">Animali</option>
+            <option value="vegetable">Vegetali</option>
+            <option value="user">Utenti</option>
+
+        </select>
+    </nav>
+    <div class="icons-container container"></div>
     <script src="./script.js"></script>
 </body>
 </html>
